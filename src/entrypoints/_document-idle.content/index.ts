@@ -1,4 +1,5 @@
 import { MATCHES } from "@/data/matches";
+// import { MATCHES } from "../../data/matches";
 import { sayHello } from "@/helpers/dev";
 
 export default defineContentScript({
