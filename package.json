@@ -18,29 +18,28 @@
     "i18n:extract-overwrite": "lingui extract --overwrite"
   },
   "dependencies": {
+    "@lingui/conf": "^4.7.0",
+    "@lingui/core": "^4.7.0",
     "@lingui/macro": "^4.7.0",
     "@lingui/react": "^4.7.0",
     "immer": "^10.0.3",
+    "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zustand": "^4.4.7"
-  },
-  "pnpm": {
-    "overrides": {
-      "@lingui/message-utils@^4.0.0": "npm:lingui-message-utils-patch@0.0.1-beta.0"
-    }
   },
   "devDependencies": {
     "@lingui/cli": "^4.7.0",
     "@lingui/conf": "^4.7.0",
     "@lingui/vite-plugin": "^4.7.0",
+    "@types/lodash-es": "^4.17.12",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "babel-plugin-macros": "^3.1.0",
     "typescript": "^5.3.3",
     "vite-tsconfig-paths": "^4.2.3",
-    "wxt": "^0.13.5"
+    "wxt": "^0.16.8"
   },
   "packageManager": "pnpm@8.14.0"
 }

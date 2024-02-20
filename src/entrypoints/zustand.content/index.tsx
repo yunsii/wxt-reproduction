@@ -9,10 +9,12 @@ export default defineContentScript({
   async main(ctx) {
     sayHello("zustand.content");
 
-    const ui = await createContentScriptUi(ctx, {
+    const ui = await createShadowRootUi(ctx, {
       name: "reproduction-zustand",
-      type: "inline",
-      mount(container) {
+      anchor: document.documentElement,
+      position: "inline",
+      onMount(container) {
+        console.log("🚀 ~ file: index.tsx:17 ~ mount ~ container:", container);
         ReactDOM.createRoot(container).render(
           <React.StrictMode>
             <App />
