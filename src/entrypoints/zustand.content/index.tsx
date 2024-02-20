@@ -14,7 +14,6 @@ export default defineContentScript({
       anchor: document.documentElement,
       position: "inline",
       onMount(container) {
-        console.log("🚀 ~ file: index.tsx:17 ~ mount ~ container:", container);
         ReactDOM.createRoot(container).render(
           <React.StrictMode>
             <App />
